@@ -56,6 +56,10 @@ body {
 /* ////////////////////////////////// */
 /* Quote card */
 /* ////////////////////////////////// */
+
+.primary-heading {
+  color: var(--light-color);
+}
 .quote-card {
   position: relative;
   background-color: var(--darkgrey-color);

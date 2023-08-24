@@ -1,0 +1,32 @@
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 600px) {
+  #root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 30px 0rem;
+    text-align: center;
+    /* background-color: red; */
+  }
+}
+@media only screen and (max-width: 490px) {
+  .quote-card {
+    width: 300px;
+  }
+  .quote-textbox {
+    padding: 10px;
+  }
+  .quote-text {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .quote-card {
+    margin: 0 auto;
+    width: 250px;
+  }
+}

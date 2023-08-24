@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import './queries.css'
 
 function App() {
   const [quote, setQuote] = useState({
@@ -9,18 +10,11 @@ function App() {
     advice: null
   })
   useEffect(() => {
-    fetch('https://api.adviceslip.com/advice')
-      .then(response => response.json())
-      .then(data => setQuote(data.slip));
-
-
-    // setQuote({ id: apiData.id, advice: apiData.advice })
-
-
+    getAdvice()
   }, [])
 
-  function getAdvice() {
-    fetch('https://api.adviceslip.com/advice')
+  async function getAdvice() {
+    await fetch('https://api.adviceslip.com/advice')
       .then(response => response.json())
       .then(data => setQuote(data.slip));
 
@@ -32,7 +26,7 @@ function App() {
 
   return (
     <>
-      <h1>Quote API</h1>
+      <h1 className='primary-heading'>Advice API</h1>
       <div className='quote-card'>
         <div className='quote-textbox'>
 
@@ -47,7 +41,7 @@ function App() {
 
 
       </div>
-      {console.log('new quote: ', quote)}
+      {/* {console.log('new quote: ', quote)} */}
     </>
   )
 }
