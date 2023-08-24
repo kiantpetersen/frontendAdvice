@@ -1,0 +1,124 @@
+:root {
+  --light-color: hsl(193, 38%, 86%);
+  --green-color: hsl(150, 100%, 66%);
+  --grey-color: hsl(217, 19%, 38%);
+  --darkgrey-color: hsl(217, 19%, 24%);
+  --dark-color: hsl(218, 23%, 16%);
+}
+body {
+  background: var(--dark-color);
+  /* font-family: "Barlow Semi Condensed", sans-serif; */
+  font-family: "Manrope", sans-serif;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+/* ////////////////////////////////// */
+/* Quote card */
+/* ////////////////////////////////// */
+.quote-card {
+  position: relative;
+  background-color: var(--darkgrey-color);
+  color: var(--light-color);
+  padding: 20px 20px 30px 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  width: 400px;
+}
+.quote-id {
+  color: var(--green-color);
+  margin: 0;
+}
+.quote-textbox {
+  position: relative;
+  padding: 20px;
+  margin: 0 0 20px 0;
+
+  border-bottom: solid 1px var(--light-color);
+}
+.quote-text {
+  font-size: 28px;
+  /* padding: 20px;
+  border-bottom: solid 1px var(--light-color); */
+}
+.quote-pause {
+  font-size: 28px;
+  position: absolute;
+  background-color: var(--darkgrey-color);
+  padding: 10px;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.quote-dice {
+  position: absolute;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-color);
+  background-color: var(--green-color);
+  font-size: 28px;
+  width: 40px;
+  height: 40px;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
